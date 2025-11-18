@@ -3,7 +3,7 @@ body {
   background: #0e0e0e;
   color: #e6e6e6;
   font-family: system-ui, sans-serif;
-  padding: 200px 40px 40px 40px; /* extra top padding for Google Auto Ads */
+  padding: 100px 40px 40px 40px; /* extra top padding for Google Auto Ads */
   max-width: 900px;
   margin: auto;
 }

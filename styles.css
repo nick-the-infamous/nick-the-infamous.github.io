@@ -3,7 +3,7 @@ body {
   background: #0e0e0e;
   color: #e6e6e6;
   font-family: system-ui, sans-serif;
-  padding: 100px 0px 100px 0px; /* top, right, bottom, left */
+  padding: 100px 10px 100px 10px; /* top, right, bottom, left */
   max-width: 800px;
   margin: auto;
 }

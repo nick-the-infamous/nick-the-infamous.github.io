@@ -3,14 +3,14 @@ body {
   background: #0e0e0e;
   color: #e6e6e6;
   font-family: system-ui, sans-serif;
-  padding: 60px 40px 40px 40px; /* extra top padding for Google Auto Ads */
+  padding: 200px 40px 40px 40px; /* extra top padding for Google Auto Ads */
   max-width: 900px;
   margin: auto;
 }
 
 /* Add extra margin between accordion items */
 .accordion-item {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 /* Header styling */
@@ -120,7 +120,7 @@ iframe {
 /* Extra spacing for Google Auto Ads */
 @media (min-width: 1024px) {
   body {
-    padding-left: 80px; /* space for side ads */
-    padding-right: 80px;
+    padding-left: 200px; /* space for side ads */
+    padding-right: 200px;
   }
 }

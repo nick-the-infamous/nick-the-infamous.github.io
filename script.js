@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
       // toggle the open class
       content.classList.toggle('open');
 
+      // lazy load iframe when opening
+      if (content.classList.contains('open')) {
+        const iframe = content.querySelector('iframe[data-src]');
+        if (iframe && !iframe.src) {
+          iframe.src = iframe.getAttribute('data-src');
+        }
+      }
+
       // rotate arrow
       arrow?.classList.toggle('rotate');
     });

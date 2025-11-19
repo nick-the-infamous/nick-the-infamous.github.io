@@ -8,6 +8,12 @@ body {
   margin: auto;
 }
 
+.build-description {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #cccccc;
+}
+
 /* Add extra margin between accordion items */
 .accordion-item {
   margin-bottom: 5px;

@@ -1,0 +1,27 @@
+{
+  "id": "necromancer",
+  "title": "Necromancer",
+  "items": [
+    {
+      "title": "2 Button Harbinger Power 31.9k",
+      "videoUrl": "https://www.youtube.com/embed/ZbowGR2QzhM",
+      "build": "https://gw2skills.net/editor/?PSiEgEWGKDjpxuYt4IdVGrA-DyQYhoh8rfHKIhzICJQFKAZen4IhxG4tExyGA-e",
+      "rotation": "Rotation is dagger 2, shroud, shroud 2. Make sure to cast dagger 2 right before\r\n              and right after you enter/exit shroud.\r\n\r\n              Precast elite skill and/or heal skill for blight stacks. You can run golem instead if you need CC. However\r\n              recasting heal/elite can be helpful if you lose blight during boss phases for example.\r\n\r\n              Also I realized that you should cast elite into heal for 20 stacks of blight at start instead of 15,\r\n              ignore that mistake. Anyway you should probably run golem + just precast heal skill.",
+      "explanation": "This is a beginner/low intensity necromancer build for fractal/raid/strike\r\n              content."
+    },
+    {
+      "title": "4 Button Harbinger Power 34.3k",
+      "videoUrl": "https://www.youtube.com/embed/1E4B4Vb_mu8",
+      "build": "https://gw2skills.net/editor/?PSiEgEWGK7gpwuYt4IdVGrA-DyQYhoh8rfHKIhzICJQFKAZen4IhxG4tExyGA-e",
+      "rotation": "Opener is both wells into dagger 2 into shroud into shroud 2 spam.\r\n\r\n              Rotation is basically dagger 2 when you exit shroud, both wells, auto attack until dagger 2 comes up, cast\r\n              dagger 2 before you enter shroud, spam shroud 2. Repeat.\r\n\r\n              Precast elite skill and/or heal skill for blight stacks. You can run golem instead if you need CC. However\r\n              recasting heal/elite can be helpful if you lose blight during boss phases for example.\r\n\r\n              Also I realized that you should cast elite into heal for 20 stacks of blight at start instead of 15,\r\n              ignore that mistake. Anyway you should probably run golem + just precast heal skill.",
+      "explanation": "This is a beginner/low intensity necromancer build for fractal/raid/strike\r\n              content."
+    },
+    {
+      "title": "4 Button Harbinger Condi 32k Parasitic Contagion",
+      "videoUrl": "https://www.youtube.com/embed/yMAWag-F4Z0",
+      "build": "https://gw2skills.net/editor/?PSiAo2lhywYasLWLW6X1xfA-DSJYmRD/Z0lEIXFgCPGckgYD8W09sCA-e",
+      "rotation": "Opener is heal skill into elite into shroud into shroud 2 spam.\r\n\r\n              Rotation is pistol 2 into focus 4 into elite (if available) into focus 4 into pistol 2 into maybe focus 4\r\n              if it's up into shroud and shroud 2 spam. Repeat.",
+      "explanation": "This is a beginner/low intensity necromancer build for fractal/raid/strike\r\n              content.\r\n\r\n              I had a lot of problems with necromancer surprisingly. I think this is maybe still a little undercooked\r\n              and I may come back to this. I think necromancer is generally \"faceroll\" where you want to cast all of\r\n              your skills so it's kind of hard to \"condense\" that into a few clicks.\r\n\r\n              Basically the problem is that 2 buttons are always shroud, shroud 2 (and weapon skill 2). Either condition\r\n              elite is better than BiP from my testing so that's the 3rd button. So 4th button has to be life force\r\n              generation I think... hence why I ran parasitic contagion. We can't fit in corruptions well. Life force\r\n              generation was lacking hard so I ran focus which I think is best for life force regen in this scenario.\r\n\r\n              Dagger main hand ended up being low damage. I think the lack of conditions during non shroud periods loses\r\n              hard. Basically dagger had a damage problem rather than a life force problem and it was hard to fix so I\r\n              gave up on it. I try to aim for my builds to be 30k+ dps.\r\n\r\n              Let me know if you have any ideas for improving it! I may come back to it later. At least the nice thing\r\n              is that with Parasitic Contagion you will be very healthy."
+    }
+  ]
+}

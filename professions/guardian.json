@@ -1,0 +1,27 @@
+{
+  "id": "guardian",
+  "title": "Guardian",
+  "items": [
+    {
+      "title": "2 Button Dragonhunter Power 34.5k",
+      "videoUrl": "https://www.youtube.com/embed/oMeVVSpcStE",
+      "build": "https://gw2skills.net/editor/?PWQAIlJwcYNsJ2JO0L/tUA-DSIYRU8fG1KpqQhKzHBBJM28vlIW2AA-e",
+      "rotation": "Don't cancel auto attack. Cast Procession of Blades in between auto attack\r\n              chains. Cast Test of Faith (this has no cast time) off cooldown.",
+      "explanation": "This is a beginner/low intensity guardian build for fractal/raid/strike\r\n              content.\r\n\r\n              You can also just auto attack and you will achieve ~30k dps (you want relic of the brawler in that case).\r\n              There is videos on that already I am not going to redo those.\r\n\r\n              I think you can technically achieve slightly higher dps if you 'stagger' the trap usage to get higher\r\n              dragonhunter relic uptime but no one is going to be doing that playing this build.\r\n\r\n              I am not going to redo/repost this but shoutout to this goat: https://www.youtube.com/watch?v=-wLG6I5fuOY.\r\n              You can technically fully afk + get ~33k dps. But it requires a lot of assassin's pieces so I am guessing\r\n              anyone playing this kind of build may not have easy the easiest access to assassin's stat."
+    },
+    {
+      "title": "3 Button Firebrand Condi 31.5k",
+      "videoUrl": "https://www.youtube.com/embed/GhiIpZ3DPi0",
+      "build": "https://gw2skills.net/editor/?PWiAc+lJwgYTsK2JO8LavSA-DSJYmRD/ZkgEoDFgCPGckgYD8W09sCA-e",
+      "rotation": "Basically spam mantra of flame off cooldown. Fit in axe 2 and torch 4 after an\r\n              axe auto attack. To make it simplest you can align axe 2 torch 4 casts to be synced like I did.",
+      "explanation": "This is a beginner/low intensity guardian build for fractal/raid/strike\r\n              content.\r\n\r\n              I spent a while trying out variants of this one but this was the simplest I found. It's kind of sad\r\n              because most of the firebrand trait line is dead but mantra of flame is simply that good. There were a few\r\n              4 button variants I found for firebrand and willbender that did 33.5kish but I felt like they were too\r\n              high apm for a low intensity build because it required Purging Flames and you had to also time axe autos\r\n              for Purging Flames so I didn't feel comfortable with it like I did for warrior (where warrior 4 button\r\n              build I have is just spam 2 signets off cooldown so I felt more comfortable with 4 buttoning that one)."
+    },
+    {
+      "title": "4 Button Firebrand Condi 33.6k",
+      "videoUrl": "https://www.youtube.com/embed/k68ziIo4_JE",
+      "build": "https://gw2skills.net/editor/?PWiAc+lJwgYdsK2JO8LavSA-DSJYmRD/ZkgEoDFgCPGckgYD8W09sCA-e",
+      "rotation": "Opener: Purging Flames, Axe 2, Torch 4, spam all of your mantra of flame charges.\r\n              <br>\r\n              Basically combine Axe 2 with Torch 4 or Purging Flames with Torch 4. Spam mantra of flame off cooldown. Try to finish auto attack chains.\r\n              <br>\r\n              Priority: Purging Flames over Axe 2 when both available.",
+      "explanation": "This is a beginner/low intensity guardian build for fractal/raid/strike content.\r\n              <br><br>\r\n              Throwing in Axe 3 and making it 5 button complicates the build with basically minimal DPS difference (only like 100-200 more from my testing). Just save Axe 3 for CC it will be more valuable there."
+    }
+  ]
+}

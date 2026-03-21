@@ -1,0 +1,27 @@
+{
+  "id": "thief",
+  "title": "Thief",
+  "items": [
+    {
+      "title": "1 Button Deadeye Power 29k Realistic",
+      "videoUrl": "https://www.youtube.com/embed/Xub_2dOWUQ4",
+      "build": "https://gw2skills.net/editor/?PaiAoqlZwkYXMM2JO6LfvOA-DSIYR0wfG1KBqQBIzzCHJM2AvlIW2AA-e",
+      "rotation": "Set your pistol 3 skill to auto cast. Just use your mark that's it.",
+      "explanation": "This is a beginner/low intensity thief build for fractal/raid/strike content.\r\n              <br><br>\r\n              Realistic == 10 boons on you, 10 conditions on golem. You have traits that scale with number of boons on you and the number of conditions on golem.\r\n              <br><br>\r\n              I decided to post this one even though others have this build. I saw that others were running other utilities or sometimes the initiative regeneration signet. However those versions yielded me ~28k DPS. I switched to impact instead and ran full zerkers with precision signet to get 29k. So a very slight increase if you plan on running this build as a 1 buttoner."
+    },
+    {
+      "title": "3 Button Deadeye Power 33.2k Realistic",
+      "videoUrl": "https://www.youtube.com/embed/dpzJ61jnV4M",
+      "build": "https://gw2skills.net/editor/?PaSAYlZwkYXMM2JO6LbvOA-DSIYRUwfG1KBqQBIzzCHJM2AvlIW2AA-e",
+      "rotation": "Mark, spam staff 2, make sure to trigger Maleficent Seven, use Mercy to reset malice and initiative. Make sure to not drop your mark so use it throughout.",
+      "explanation": "This is a beginner/low intensity thief build for fractal/raid/strike content.\r\n              <br><br>\r\n              Realistic == 10 boons on you, 10 conditions on golem. You have traits that scale with number of boons on you and the number of conditions on golem."
+    },
+    {
+      "title": "3 Button Deadeye Condi 32.7k Realistic",
+      "videoUrl": "https://www.youtube.com/embed/3fbx8LDB1XA",
+      "build": "https://gw2skills.net/editor/?PaiAgilZwkYXMM2JO2W9vOA-DSJYmRD/ZUgCIOJgCPGckgYD8amxZFA-e",
+      "rotation": "Deadeye's mark into Dagger 3. Mercy once you trigger Maleficent Seven and run out of initiative to regain initiative and reset Maleficent Seven. Recast deadeye's mark but make sure you get back the initiative from it.",
+      "explanation": "This is a beginner/low intensity thief build for fractal/raid/strike content.\r\n              <br><br>\r\n              Realistic == 10 boons on you, 10 conditions on golem. You have traits that scale with number of boons on you and the number of conditions on golem.\r\n              <br><br>\r\n              It wasn't the cleanest run but it was the highest number I got. Also as a warning this one seems kind of dangerous to play since there is a lot of movement locks. Play at your own risk."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "elementalist",
+  "title": "Elementalist",
+  "items": [
+    {
+      "title": "3 Button Tempest Power 33.4k",
+      "videoUrl": "https://www.youtube.com/embed/yQW9_79EuOY",
+      "build": "https://gw2skills.net/editor/?PGiAwilRwWYXsKGJO6KvtLA-DyQYhohLfHkRZERCURBY7tgjEGbg3SELbAA-e",
+      "rotation": "Opener is overload air. Precast elementals.\r\n\r\n              Rotation is: Overload air, fire, overload air, water, overload air, repeat.",
+      "explanation": "This is a beginner/low intensity elementalist build for fractal/raid/strike\r\n              content."
+    },
+    {
+      "title": "4 Button Tempest Power 35.1k",
+      "videoUrl": "https://www.youtube.com/embed/lKPPUWWUN_U",
+      "build": "https://gw2skills.net/editor/?PGiAwilRwWYXsKGJO6KvtLA-DyQYhohLfHkRZERCURBY7tgjEGbg3SELbAA-e",
+      "rotation": "Opener is overload air. Precast elementals.\r\n\r\n              Rotation is: Overload air, fire, overload air, water, overload air, repeat. Cast \"Feel the Burn!\" on\r\n              cooldown.",
+      "explanation": "This is a beginner/low intensity elementalist build for fractal/raid/strike\r\n              content."
+    },
+    {
+      "title": "5 Button Tempest Condi 32.4k",
+      "videoUrl": "https://www.youtube.com/embed/suQDeIcF1UY",
+      "build": "https://gw2skills.net/editor/?PGiEsEWGB7ipxqYk4o6Y2uA-DSJYmRD/ZEnCIEJgCPGckgYD8W09sCA-e",
+      "rotation": "Precast elementals. Opener is Warhorn 5, Scepter 3, Signets, Overload Fire (F1).\r\n              The priority order is: F1, Scepter 3, Signet of Fire, Signet of Earth, Warhorn 5.",
+      "explanation": "This is a beginner/low intensity elementalist build for fractal/raid/strike content."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+@media (max-width: 640px) {
+  body {
+    padding-top: 124px;
+  }
+
+  .header-content {
+    padding-inline: 14px;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .main-nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .accordion-header,
+  .accordion-header.nested {
+    padding-inline: 16px;
+  }
+
+  .accordion-content.open {
+    padding-inline: 16px;
+  }
+
+  .accordion-content.nested.open {
+    padding-inline: 14px;
+  }
+}

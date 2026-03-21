@@ -1,0 +1,60 @@
+:root {
+  --bg: #0e0e0e;
+  --bg-elevated: #1a1a1a;
+  --bg-elevated-hover: #222222;
+  --bg-nested: #111111;
+  --bg-nested-hover: #181818;
+  --bg-panel: #141414;
+  --bg-panel-nested: #0d0d0d;
+  --border: #252525;
+  --text: #e6e6e6;
+  --text-muted: #cccccc;
+  --text-soft: #bdbdbd;
+  --accent: #e6b450;
+  --accent-hover: #ffd480;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  padding: 112px 10px 50px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 12px;
+}

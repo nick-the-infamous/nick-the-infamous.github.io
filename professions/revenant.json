@@ -1,0 +1,20 @@
+{
+  "id": "revenant",
+  "title": "Revenant",
+  "items": [
+    {
+      "title": "3 Button Herald Power 31.8k",
+      "videoUrl": "https://www.youtube.com/embed/IjZYpyhizQk",
+      "build": "https://gw2skills.net/editor/?PmiAwylxQHMPyh1RNMO6hRSfMCKgJ7la7GA-DSIYR0wfGtJBqQBIz7EHJM2AvlIW2AA-e",
+      "rotation": "Make sure your facet of nature (F2 skill) is active. Opener is 2 sword 2s in Shiro and swap to Jalis. Rotation: Sword 2.",
+      "explanation": "This is a beginner/low intensity revenant build for fractal/raid/strike content. Realistic == 10 boons. You have traits that scale with number of boons on you."
+    },
+    {
+      "title": "3 Button Renegade Condi 30.4k",
+      "videoUrl": "https://www.youtube.com/embed/kYO0Xe3ggUA",
+      "build": "https://gw2skills.net/editor/?PmSEQLbhQYbUETjkYZEEbkAZGkAHdJrnKA-DSJYmRB/ZEnCIXJgCPGckgYD8W09sCA-e",
+      "rotation": "Spear 5. Swap legends as much as possible (your traits give conditions on legend swap). Mallyx elite in Mallyx. Opener is Spear 5 in Kalla, enter combat, swap to Mallyx and proc legend swap traits. Mallyx elite, etc.",
+      "explanation": "This is a beginner/low intensity revenant build for fractal/raid/strike content."
+    }
+  ]
+}

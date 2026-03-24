@@ -4,8 +4,9 @@ Static site for the `nick-the-infamous.github.io` GitHub Pages site.
 
 ## Structure
 
-- `index.html`: landing page shell for the low intensity builds page
-- `sections/welcome.html`: unique welcome section loaded into the home page
+- `index.html`: homepage landing page
+- `builds.html`: low intensity builds browser page
+- `sections/welcome.html`: unique welcome section loaded into the builds page
 - `professions/`: profession JSON files used to render the class build sections
 - `about.html`: static about page
 - `css/`: split styles for base tokens, layout, accordion UI, and responsive rules
@@ -20,8 +21,8 @@ Static site for the `nick-the-infamous.github.io` GitHub Pages site.
 
 ## Local Preview
 
-Because the home page now loads section fragments with `fetch`, preview it through a local web server instead of
-opening `index.html` directly from disk.
+Because the builds page loads section fragments with `fetch`, preview the site through a local web server instead of
+opening `builds.html` directly from disk.
 
 One simple option:
 

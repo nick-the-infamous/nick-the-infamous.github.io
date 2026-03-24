@@ -2,6 +2,7 @@ import { escapeHtml, formatTextBlock, indentHtml } from './dom-utils.js';
 
 export function renderSectionItem(sectionId, item, index) {
   const panelId = `${sectionId}-item-panel-${index + 1}`;
+  const transcriptPanelId = `${sectionId}-item-transcript-${index + 1}`;
   const label = escapeHtml(item.title);
 
   return [
@@ -11,13 +12,13 @@ export function renderSectionItem(sectionId, item, index) {
     '        <span class="arrow" aria-hidden="true">&#9656;</span>',
     '      </button>',
     `      <div class="accordion-content nested" id="${panelId}" hidden>`,
-    renderSectionItemBody(item),
+    renderSectionItemBody(item, transcriptPanelId),
     '      </div>',
     '    </div>',
   ].join('\n');
 }
 
-function renderSectionItemBody(item) {
+function renderSectionItemBody(item, transcriptPanelId) {
   const parts = [];
 
   if (item.videoUrl) {
@@ -53,7 +54,15 @@ function renderSectionItemBody(item) {
 
   if (item.cleaned_transcript && item.cleaned_transcript.trim()) {
     parts.push(
-      `        <div class="build-description build-field build-transcript-inline"><strong>CLEANED TRANSCRIPT:</strong> ${escapeHtml(item.cleaned_transcript)}</div>`,
+      '        <div class="accordion-item transcript-toggle">',
+      `          <button type="button" class="accordion-header transcript-toggle-header" aria-controls="${transcriptPanelId}" aria-expanded="false">`,
+      '            <span class="accordion-label">Transcript</span>',
+      '            <span class="arrow" aria-hidden="true">&#9656;</span>',
+      '          </button>',
+      `          <div class="accordion-content transcript-toggle-content" id="${transcriptPanelId}" hidden>`,
+      `            <div class="build-description build-field build-transcript-inline">${escapeHtml(item.cleaned_transcript)}<br><br><em>AI-assisted cleanup of the original transcript; may contain mistakes.</em></div>`,
+      '          </div>',
+      '        </div>',
     );
   }
 

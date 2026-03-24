@@ -8,6 +8,7 @@
     content="Low intensity Guild Wars 2 builds for raids, strikes, and fractals, organized by profession with video guides and build links." />
   <meta name="google-adsense-account" content="ca-pub-2375120912485535" />
   <title>Low Intensity Builds</title>
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://www.youtube.com" />
   <link rel="preconnect" href="https://www.gw2skills.net" />
   <link rel="stylesheet" href="css/base.css" />
@@ -18,7 +19,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="motion-pending">
   <header class="site-header">
     <div class="header-content">
       <p class="site-title">Nick The Infamous</p>
@@ -32,15 +33,28 @@
   </header>
 
   <main class="page-content page-content--home">
-    <h1 class="page-title">Low Intensity Builds</h1>
-    <p class="page-intro">
-      Here you'll find my collection of Guild Wars 2 low intensity builds. These are beginner-friendly and designed to
-      help you get into endgame PvE content quickly, succeed in any encounter, and fit well in most squads.
-    </p>
+    <section class="page-hero page-hero--builds" data-shell-reveal>
+      <p class="page-kicker" data-shell-text>Low Intensity Builds</p>
+      <p class="page-intro" data-shell-text>
+        Browse beginner-friendly Guild Wars 2 builds by profession, with quick explanations, rotations, and links to the full build setup.
+      </p>
+    </section>
 
-    <div class="accordion" data-section-root aria-live="polite">
-      <p class="loading-message">Loading build sections...</p>
-    </div>
+    <section class="browser-shell" aria-label="Low intensity builds browser">
+      <aside class="browser-sidebar" data-shell-reveal>
+        <div class="browser-sidebar-copy">
+          <p class="browser-sidebar-label" data-shell-text>Sections</p>
+          <p class="browser-sidebar-text" data-shell-text>Start with the welcome page or jump straight to a profession.</p>
+        </div>
+        <nav class="section-nav" data-section-nav aria-label="Build section navigation" hidden></nav>
+      </aside>
+
+      <div class="browser-stage" data-shell-reveal>
+        <div class="section-list" data-section-root aria-live="polite">
+          <p class="loading-message">Loading section...</p>
+        </div>
+      </div>
+    </section>
 
     <noscript>
       <p class="noscript-message">This page loads its build sections with JavaScript. Enable JavaScript to view them.</p>

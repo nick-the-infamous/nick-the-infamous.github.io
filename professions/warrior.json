@@ -3,88 +3,116 @@
   "title": "Warrior",
   "items": [
     {
-      "title": "1 Button Paragon Power 31.9k",
-      "videoUrl": "https://www.youtube.com/embed/vYa1DDOApmY",
-      "build": "https://gw2skills.net/editor/?PKiAgelFwsYUsJWJO+K2zSA-DSIYR0wXGtlAVUA2en4IhxG4tExyGA-e",
-      "rotation": "Spam f1. That's it.\r\n\r\n              Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\r\n\r\n              Do note that you want to maintain 7+ stacks of motivation. If you drop motivation try to recast F2 to\r\n              regain motivation.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              Note here is that Unsuspecting Foe crit caps you so take some assassin's pieces/accuracy sigil if you want\r\n              to always be crit capped.\r\n\r\n              If you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the\r\n              extra precision from Berserker's is unnecessary (make sure you are at 75% crit chance though with fury).\r\n              Up to you."
+      "title": "1 Button Spellbreaker Power 31.4k",
+      "videoUrl": "https://www.youtube.com/embed/2aUPI9TVkHI",
+      "build": "https://gw2skills.net/editor/?PKiAgelZwsYUsJWJO+K2veA-DSIYR0wXGtlAVUA2en4IhxG4tExyGA-e",
+      "rotation": "Spam f1. That's it.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nNote here is that Unsuspecting Foe crit caps you so take some assassin's pieces/accuracy sigil if you want to always be crit capped.\n\nIf you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the extra precision from Berserker's is unnecessary (make sure you are at 75% crit chance though with fury). Up to you.",
+      "cleaned_transcript": ""
     },
     {
       "title": "1 Button Paragon Condi 32.7k",
       "videoUrl": "https://www.youtube.com/embed/yZ71h2ceOm8",
       "build": "https://gw2skills.net/editor/?PKiAwylFwsYTMKWJO+K1zSA-DSJYmRD/ZEnCIXJgCPGckgYD8W09sCA-e",
-      "rotation": "F1 off cooldown. Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\r\n\r\n              If you ever drop below 7 motivation recast F2.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\r\n\r\n              You can run full grieving and krait runes for a small damage boost (probably add on like 1k DPS). However if you are a new player and you are building out your first ascended set get viper's instead it is more useful across way more builds.\r\n              extra precision from Berserker's is unnecessary (make sure you are at 75% crit chance though with fury).\r\n              Up to you."
+      "rotation": "F1 off cooldown. Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\n\nIf you ever drop below 7 motivation recast F2.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
     },
     {
-      "title": "1 Button Spellbreaker Power 31.4k",
-      "videoUrl": "https://www.youtube.com/embed/2aUPI9TVkHI",
-      "build": "https://gw2skills.net/editor/?PKiAgelZwsYUsJWJO+K2veA-DSIYR0wXGtlAVUA2en4IhxG4tExyGA-e",
-      "rotation": "Spam f1. That's it.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              Note here is that Unsuspecting Foe crit caps you so take some assassin's pieces/accuracy sigil if you want\r\n              to always be crit capped.\r\n\r\n              If you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the\r\n              extra precision from Berserker's is unnecessary (make sure you are at 75% crit chance though with fury).\r\n              Up to you."
-    },
-    {
-      "title": "3 Button Paragon Condi 37.4k",
-      "videoUrl": "https://www.youtube.com/embed/lAXw5KXEVls",
-      "build": "https://gw2skills.net/editor/?PKiAwylFwsYTMKWJO+K9zSA-DSJYmRD/ZEnCIXJgCPGckgYD8W09sCA-e",
-      "rotation": "F1 into Sword 3 into Sword 4. Cast after an auto attack. Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\r\n\r\n              You can also finish auto chains for a very small damage boost. However this is a bit 'harder' to do, so it's not necessary.\r\n\r\n              If you ever drop below 7 motivation recast F2.\r\n\r\n              Make sure to leave sword 4 inside the enemy (don't recast/yank it out).",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content."
+      "title": "1 Button Paragon Power 31.9k",
+      "videoUrl": "https://www.youtube.com/embed/vYa1DDOApmY",
+      "build": "https://gw2skills.net/editor/?PKiAgelFwsYUsJWJO+K2zSA-DSIYR0wXGtlAVUA2en4IhxG4tExyGA-e",
+      "rotation": "Spam f1. That's it.\n\nOpener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\n\nDo note that you want to maintain 7+ stacks of motivation. If you drop motivation try to recast F2 to regain motivation.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nNote here is that Unsuspecting Foe crit caps you so take some assassin's pieces/accuracy sigil if you want to always be crit capped.\n\nIf you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the extra precision from Berserker's is unnecessary (make sure you are at 75% crit chance though with fury). Up to you.",
+      "cleaned_transcript": ""
     },
     {
       "title": "3 Button Berserker Power 34.5k",
       "videoUrl": "https://www.youtube.com/embed/q6-7iMRAPko",
       "build": "https://gw2skills.net/editor/?PKSAIlRwWYTMKmJO+O/tKA-DSIYRUwfG1KBqQBIzPEHJM2AvlIW2AA-e",
-      "rotation": "Spam F1s + Blood Reckoning. Try not to cancel your auto attack chain. Spam\r\n              Outrage off cooldown.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content."
+      "rotation": "Spam F1s + Blood Reckoning. Try not to cancel your auto attack chain. Spam Outrage off cooldown.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
+    },
+    {
+      "title": "3 Button Quickness Berserker Power 30.1k",
+      "videoUrl": "https://www.youtube.com/embed/z7ABCx22ZhM",
+      "build": "https://gw2skills.net/editor/?PKSAIlRwWYTMKmJO+O/tMA-DSIYRUwfG1KBqQBIzPEHJM2AvlIW2AA-e",
+      "rotation": "Spam F1s + Blood Reckoning. Try not to cancel your auto attack chain. Spam Outrage off cooldown.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
     },
     {
       "title": "3 Button Berserker Condi 33.3k",
       "videoUrl": "https://www.youtube.com/embed/AUHkG8CcOqM",
       "build": "https://gw2skills.net/editor/?PKiAwylRwoYTsFmJO+K9tSA-DSJYmRD/ZEnCIXJgCPGckgYD8W09sCA-e",
-      "rotation": "Spam F1s. Spam Outrage off cooldown for berserk uptime. Cancelling auto chains\r\n              isn't a super big deal.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              I didn't get higher damage with UF because I think your base crit is already high. It's not 100% min maxed\r\n              (we overcap on expertise here) so you can probably push damage a little bit more by swapping in some\r\n              sinister pieces/running condi primary food instead of being cheap like me but it's good enough trust me. I\r\n              could see it pushing 34k."
+      "rotation": "Spam F1s. Spam Outrage off cooldown for berserk uptime. Cancelling auto chains isn't a super big deal.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nI didn't get higher damage with UF because I think your base crit is already high. It's not 100% min maxed (we overcap on expertise here) so you can probably push damage a little bit more by swapping in some sinister pieces/running condi primary food instead of being cheap like me but it's good enough trust me. I could see it pushing 34k.",
+      "cleaned_transcript": ""
     },
     {
-      "title": "3 Button Bladesworn Power 33.4k",
-      "videoUrl": "https://www.youtube.com/embed/QVdiWW37Fjw",
-      "build": "https://en.gw2skills.net/editor/?PKiAcqlZwUZTMKmLO+SVxUA-DyQYhohLfHkRZERCURBY7HijEGbg3SELbAA-e",
+      "title": "3 Button Bladesworn Power 33.8k",
+      "videoUrl": "https://www.youtube.com/embed/utKnY9phWxw",
+      "build": "https://gw2skills.net/editor/?PKiAwqlJwUZTMKmLO+SVxUA-DyQYhohreHkSZERCURBY7dijEGbg3SELbAA-e",
       "rotation": "3 buttons basically. No weapon swap. Cast Dragon Trigger off cooldown.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              You take river's flow to be able to 'afk' generate flow. Technically speaking you don't 'need' it so you\r\n              can get a slightly higher dps number running Unseen Sword but it makes flow generation a lot tighter. I\r\n              would just recommend River's Flow if you are a beginner."
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nYou take river's flow to be able to 'afk' generate flow. Technically speaking you don't 'need' it so you can get a slightly higher dps number running Unseen Sword but it makes flow generation a lot tighter. I would just recommend River's Flow if you are a beginner.\n\nNote that technically this isn't quite 'realistic' (check Empowered in tactics line) but the difference is minimal you will do around this damage.",
+      "cleaned_transcript": ""
+    },
+    {
+      "title": "3 Button Alacrity Bladesworn Power 28.3k",
+      "videoUrl": "https://www.youtube.com/embed/U2KfFSSbW58",
+      "build": "https://gw2skills.net/editor/?PKiAwqlZwUZTMKmLO+SVxcA-DyQYhohreHkSZERCURBY7dijEGbg3SELbAA-e",
+      "rotation": "3 buttons basically. No weapon swap. Cast Dragon Trigger off cooldown.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
+    },
+    {
+      "title": "3 Button Paragon Condi 37.4k",
+      "videoUrl": "https://www.youtube.com/embed/lAXw5KXEVls",
+      "build": "https://gw2skills.net/editor/?PKiAwylFwsYTMKWJO+K9zSA-DSJYmRD/ZEnCIXJgCPGckgYD8W09sCA-e",
+      "rotation": "F1 into Sword 3 into Sword 4. Cast after an auto attack. Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\n\nYou can also finish auto chains for a very small damage boost. However this is a bit 'harder' to do\\ so it's not necessary.\n\nIf you ever drop below 7 motivation recast F2.\n\nMake sure to leave sword 4 inside the enemy (don't recast/yank it out).",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
     },
     {
       "title": "4 Button Paragon Alacrity Healer",
       "videoUrl": "https://www.youtube.com/embed/pLIeb-eTgUA",
       "build": "https://gw2skills.net/editor/?PKSAYlFwuYesPGNm8W3TNA-DSJYqRBfZkYBUdCo7rhjEKbg3ifbWAA-e",
-      "rotation": "Cast \"To The Limit!\" (heal), \"For Great Justice!\", F3, F1 off cooldown.\r\n\r\n              You output: 25 might, fury, protection, swiftness, regen, alacrity, periodic stability, periodic vigor,\r\n              barrier, strong condi cleanse through F1 F3.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              You will (probably) not be able to solo heal a squad or the build may not work well on more\r\n              threatening/higher damaging scenario. If you play this the overheal from the other healer will be\r\n              assisting you some. Or if people are eating a lot of damage it will also not work well and you have to\r\n              press your skills. In those scenarios Staff 2 Staff 3 Staff 5 are good burst healing skills to press. I\r\n              focused low intensity on providing good boons + sustained healing. Unfortunately healers need to be\n              versatile somewhat and adapt to the situation.\n\n              If you are dying, use minstrel's or giver's stats.\n\n              You run Febe relic (swiftness on healing skill) because that's your only source of swiftness for your\n              subgroup with 4 buttons and no weapon swap.\n\n              You can take Vigorous Shouts (last trait line tactics) for more raw healing, but you lose stability."
+      "rotation": "Cast \"To The Limit!\" (heal), \"For Great Justice!\", F3, F1 off cooldown.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nYou will (probably) not be able to solo heal a squad or the build may not work well on more threatening/higher damaging scenario. If you play this the overheal from the other healer will be assisting you some. Or if people are eating a lot of damage it will also not work well and you have to press your skills. In those scenarios Staff 2 Staff 3 Staff 5 are good burst healing skills to press. I focused low intensity on providing good boons + sustained healing. Unfortunately healers need to be versatile somewhat and adapt to the situation.",
+      "cleaned_transcript": ""
     },
     {
       "title": "5 Button Paragon Power 37.5k",
       "videoUrl": "https://www.youtube.com/embed/z8rS5HFNnAA",
       "build": "https://gw2skills.net/editor/?PKiAgelFwqYWsJWJO+K2zSA-DSIYR0wXG1mAVUA2en4IhxG4tExyGA-e",
-      "rotation": "Rotation is basically f1 - axe 4 - axe 5. Spam Dolyak and Stamina signets off\r\n              cooldown. Precast signets for ferocity buff.\r\n\r\n              Opener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\r\n\r\n              Do note that you want to maintain 7+ stacks of motivation. If you drop motivation try to recast F2 to\r\n              regain motivation.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content."
+      "rotation": "Rotation is basically f1 - axe 4 - axe 5. Spam Dolyak and Stamina signets off cooldown. Precast signets for ferocity buff.\n\nOpener is To The Limit into Chant of Action (for motivation, read grandmaster trait in paragon) into F1.\n\nDo note that you want to maintain 7+ stacks of motivation. If you drop motivation try to recast F2 to regain motivation.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.",
+      "cleaned_transcript": ""
     },
     {
       "title": "5 Button Berserker Condi 38k",
       "videoUrl": "https://www.youtube.com/embed/VlzpmxgIOX4",
       "build": "https://gw2skills.net/editor/?PKiAwylRwoYTsFmJO+K9tSA-DSRYfBhZGNcnnRcKgclAK8YwRCiNwbR3zKA-e",
-      "rotation": "This is a priority based rotation. The priority in order is: F1 (Burst) - Blood\r\n              Reckoning into F1 - Sword 4 (Impale) - Sword 3 (Final Thrust). You actually want to cancel auto attack\r\n              chains (casting skills leads to higher damage) so don't finish your auto attack chains and cast skills.\r\n              Basically make the priority decision after completing an auto attack. Spam outrage off cool down for\r\n              berserk uptime.\r\n\r\n              MAKE SURE TO LEAVE SWORD 4 INSIDE THE ENEMY. Don't pull it out with recasting sword 4. It applies torment\r\n              while it's inside the enemy.",
-      "explanation": "This is a beginner warrior build for fractal/raid/strike content.\r\n\r\n              I realized in this video I had a dragon's offhand sword instead of a vipers sword. With vipers this\n              achieved ~38.2k. Not that much different but a slight increase.\n\n              I was min-maxing a bit there. You don't need the two sinister pieces; full viper's is fine, you will just\n              overcap on expertise a little bit."
+      "rotation": "This is a priority based rotation. The priority in order is: F1 (Burst) - Blood Reckoning into F1 - Sword 4 (Impale) - Sword 3 (Final Thrust). You actually want to cancel auto attack chains (casting skills leads to higher damage) so don't finish your auto attack chains and cast skills. Basically make the priority decision after completing an auto attack. Spam outrage off cool down for berserk uptime.\n\nMAKE SURE TO LEAVE SWORD 4 INSIDE THE ENEMY. Don’t pull it out with recasting sword 4. It applies torment while it’s inside the enemy.",
+      "explanation": "This is a beginner warrior build for fractal/raid/strike content.\n\nI realized in this video I had a dragon's offhand sword instead of a vipers sword. With vipers this achieved ~38.2k. Not that much different but a slight increase.",
+      "cleaned_transcript": ""
     },
     {
       "title": "5 Button Spellbreaker Power 37.7k",
       "videoUrl": "https://www.youtube.com/embed/6MZvGCfEJak",
       "build": "https://gw2skills.net/editor/?PKiAgelFwqYWsJWJO+K2veA-DSIYR0wXG1mAVUA2en4IhxG4tExyGA-e",
-      "rotation": "Rotation is basically f1 - axe 4 - axe 5. Spam Dolyak and Stamina signets off\r\n              cooldown. Precast signets for ferocity buff.",
-      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike\r\n              content.\r\n\r\n              Do note that you crit cap with Unsuspecting Foe. If you want to crit cap always you can swap to assassins\r\n              rings and accuracy sigil instead of impact. This will result in slightly lower damage.\r\n\r\n              If you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the\r\n              extra precision from Berserker's is unnecessary. Up to you.\r\n\r\n              I tried out signet of fury but I didn't see a significant DPS difference. I decided not to run it because\r\n              it has a small cast time vs the other signets I spam here. I wanted to make it really easy to play and\r\n              signet cast time may screw something up.\r\n\r\n              I don't like kick because it requires the player to look at peak performance uptime and kick has more\r\n              animation locks. I feel like it's not 'beginner' enough. I wanted to make it 'smooth' to the feel."
+      "rotation": "Rotation is basically f1 - axe 4 - axe 5. Spam Dolyak and Stamina signets off cooldown. Precast signets for ferocity buff.",
+      "explanation": "This is a beginner/low intensity warrior build for fractal/raid/strike content.\n\nDo note that you crit cap with Unsuspecting Foe. If you want to crit cap always you can swap to assassins rings and accuracy sigil instead of impact. This will result in slightly lower damage.\n\nIf you want to min max Unsuspecting Foe you could run Valkyrie pieces and get more vitality since the extra precision from Berserker's is unnecessary. Up to you.\n\nI tried out signet of fury but I didn't see a significant DPS difference. I decided not to run it because it has a small cast time vs the other signets I spam here. I wanted to make it really easy to play and signet cast time may screw something up.\n\nI don't like kick because it requires the player to look at peak performance uptime and kick has more animation locks. I feel like it's not 'beginner' enough. I wanted to make it 'smooth' to the feel.",
+      "cleaned_transcript": ""
     },
     {
       "title": "6 Button Berserker Power 39.1k",
       "videoUrl": "https://www.youtube.com/embed/M9xxFXsYJqo",
       "build": "https://gw2skills.net/editor/?PKSAElRwoYTsFmJO2SVtKA-DSIYRUwXGtlAVUA2eW4IhxG4tExyGA-e",
-      "rotation": "This is a priority based rotation. The priority in order is: F1 (Burst) - Blood\r\n              Reckoning into F1 - GS 2 (Hundred Blades) - GS 4 (Bladetrail) - GS 5 (Rush). You make a decision on what\r\n              to cast between auto attack chains. Do not cancel auto attack chains. Spam outrage off cool down for\r\n              berserk uptime.\r\n\r\n              Example: auto attack chain into F1 into GS 2 into GS 4 into auto attack chain. An auto attack chain is 3\r\n              hits on the greatsword (GS 1).",
-      "explanation": "This is a beginner warrior build for fractal/raid/strike content.\r\n\r\n              Looking back over it I made a few minor mistakes I think 39.5k+ is possible if you play it well."
+      "rotation": "This is a priority based rotation. The priority in order is: F1 (Burst) - Blood Reckoning into F1 - GS 2 (Hundred Blades) - GS 4 (Bladetrail) - GS 5 (Rush). You make a decision on what to cast between auto attack chains. Do not cancel auto attack chains. Spam outrage off cool down for berserk uptime.",
+      "explanation": "This is a beginner warrior build for fractal/raid/strike content.\n\nLooking back over it I made a few minor mistakes I think 39.5k+ is possible if you play it well.",
+      "cleaned_transcript": ""
     }
   ]
 }

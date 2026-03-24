@@ -1,5 +1,6 @@
 :root {
   --bg: #0e0e0e;
+  --bg-shell: rgba(10, 10, 10, 0.86);
   --bg-elevated: #1a1a1a;
   --bg-elevated-hover: #222222;
   --bg-nested: #111111;
@@ -23,15 +24,19 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(230, 180, 80, 0.1), transparent 28%),
+    linear-gradient(180deg, #111111 0%, #0e0e0e 22%, #0b0b0b 100%);
   color: var(--text);
   font-family: system-ui, sans-serif;
-  padding: 112px 10px 50px;
+  padding: 88px 0 56px;
+  line-height: 1.6;
 }
 
 a {
@@ -51,10 +56,11 @@ button:focus-visible {
 }
 
 iframe {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
   border: 0;
-  border-radius: 8px;
-  margin-top: 12px;
+  border-radius: 10px;
+  margin-top: 0;
 }

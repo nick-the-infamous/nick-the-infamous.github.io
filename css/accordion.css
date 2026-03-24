@@ -28,14 +28,19 @@
 }
 
 .accordion-header.nested {
-  margin: 5px 0;
-  background: var(--bg-nested);
-  border: 1px solid var(--border);
-  padding: 14px 18px;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  padding: 16px 18px;
+  border-radius: 0;
 }
 
 .accordion-header.nested:hover {
-  background: var(--bg-nested-hover);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.accordion-header.nested .accordion-label {
+  font-weight: 600;
 }
 
 .accordion-label {
@@ -56,20 +61,84 @@
   background: var(--bg-panel);
   border-radius: 10px;
   padding: 0 20px;
+  opacity: 0;
+  will-change: height, opacity;
 }
 
 .accordion-content.open {
   display: block;
   padding: 5px 20px 16px;
+  opacity: 1;
 }
 
 .nested .accordion-content,
 .accordion-content.nested {
-  background: var(--bg-panel-nested);
-  border-radius: 8px;
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid var(--border);
   padding: 0 18px;
 }
 
 .accordion-content.nested.open {
-  padding: 5px 18px 16px;
+  padding: 16px 18px 18px;
+}
+
+.accordion-content.is-revealing > :not(iframe) {
+  opacity: 0;
+  filter: blur(8px);
+  animation: accordionContentReveal 180ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.accordion-content.is-revealing > :not(iframe):nth-child(1) {
+  animation-delay: 14ms;
+}
+
+.accordion-content.is-revealing > :not(iframe):nth-child(2) {
+  animation-delay: 26ms;
+}
+
+.accordion-content.is-revealing > :not(iframe):nth-child(3) {
+  animation-delay: 38ms;
+}
+
+.accordion-content.is-revealing > :not(iframe):nth-child(4) {
+  animation-delay: 50ms;
+}
+
+.accordion-content.is-revealing > :not(iframe):nth-child(5) {
+  animation-delay: 62ms;
+}
+
+.accordion-item.nested {
+  margin-bottom: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+@keyframes accordionContentReveal {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion-content,
+  .accordion-content.open {
+    transition: none;
+  }
+
+  .accordion-content.is-revealing > :not(iframe) {
+    animation: none;
+    opacity: 1;
+    filter: none;
+  }
 }

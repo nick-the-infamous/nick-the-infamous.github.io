@@ -1,51 +1,31 @@
 import { escapeHtml, indentHtml } from './dom-utils.js';
 
-export function upgradeLegacyAccordionMarkup(root) {
-  let nextPanelId = 1;
-
-  root.querySelectorAll('div.accordion-header').forEach((header) => {
-    const content = header.nextElementSibling;
-    if (!content || !content.classList.contains('accordion-content')) {
-      return;
-    }
-
-    const labelContainer = header.cloneNode(true);
-    labelContainer.querySelectorAll('.arrow').forEach((arrow) => arrow.remove());
-
-    const labelMarkup = labelContainer.innerHTML.trim();
-    const labelText = labelContainer.textContent.trim().replace(/\s+/g, ' ');
-    const panelId = content.id || `legacy-panel-${nextPanelId++}`;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = header.className;
-    button.setAttribute('aria-controls', panelId);
-    button.setAttribute('aria-expanded', 'false');
-    button.dataset.accordionLabel = labelText;
-    button.innerHTML = [
-      `<span class="accordion-label">${labelMarkup}</span>`,
-      '<span class="arrow" aria-hidden="true">&#9656;</span>',
-    ].join('');
-
-    content.id = panelId;
-    content.hidden = true;
-    header.replaceWith(button);
-  });
-}
-
 export function renderSection(section) {
-  const panelId = `section-panel-${section.id}`;
+  const buildCountLabel = `${section.items.length} ${section.items.length === 1 ? 'build' : 'builds'}`;
 
   return [
-    `<section class="accordion-item" id="${escapeHtml(section.id)}">`,
-    `  <button type="button" class="accordion-header" aria-controls="${panelId}" aria-expanded="false" data-accordion-label="${escapeHtml(section.title)}">`,
-    `    <span class="accordion-label">${escapeHtml(section.title)}</span>`,
-    '    <span class="arrow" aria-hidden="true">&#9656;</span>',
-    '  </button>',
-    `  <div class="accordion-content" id="${panelId}" hidden>`,
+    `<section class="build-section" id="${escapeHtml(section.id)}">`,
+    '  <div class="build-section-header">',
+    '    <div class="build-section-heading-group">',
+    `      <h2 class="build-section-title">${escapeHtml(section.title)}</h2>`,
+    `      <p class="build-section-meta">${escapeHtml(buildCountLabel)}</p>`,
+    '    </div>',
+    '  </div>',
+    '  <div class="build-section-items">',
     section.items.map((item, index) => renderSectionItem(section.id, item, index)).join('\n'),
     '  </div>',
     '</section>',
+  ].join('\n');
+}
+
+export function renderSectionNav(sections) {
+  return [
+    '<div class="section-nav-list">',
+    ...sections.map(
+      (section) =>
+        `  <button type="button" class="section-nav-button" data-section-id="${escapeHtml(section.id)}" data-shell-text aria-pressed="false">${escapeHtml(section.title)}</button>`,
+    ),
+    '</div>',
   ].join('\n');
 }
 
@@ -71,7 +51,9 @@ function renderSectionItemBody(item) {
 
   if (item.videoUrl) {
     parts.push(
-      `        <iframe data-src="${escapeHtml(item.videoUrl)}" title="${escapeHtml(item.title)} video" loading="lazy" allowfullscreen></iframe>`,
+      `        <div class="video-wrapper">`,
+      `          <iframe data-src="${escapeHtml(item.videoUrl)}" title="${escapeHtml(item.title)} video" loading="lazy" allowfullscreen></iframe>`,
+      '        </div>',
     );
   }
 
@@ -95,6 +77,12 @@ function renderSectionItemBody(item) {
   if (item.explanation) {
     parts.push(
       `        <div class="build-description build-field"><strong>EXPLANATION:</strong> ${item.explanation}</div>`,
+    );
+  }
+
+  if (item.cleaned_transcript && item.cleaned_transcript.trim()) {
+    parts.push(
+      `        <div class="build-description build-field build-transcript-inline"><strong>CLEANED TRANSCRIPT:</strong> ${escapeHtml(item.cleaned_transcript)}</div>`,
     );
   }
 

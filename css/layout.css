@@ -85,7 +85,7 @@ body.shell-visible [data-shell-reveal] {
 }
 
 .page-hero--builds {
-  max-width: 760px;
+  max-width: 100%;
 }
 
 .page-hero--standard {
@@ -215,6 +215,10 @@ body.shell-visible [data-shell-text] {
   margin: 0;
   max-width: 760px;
   color: var(--text-soft);
+}
+
+.page-hero--builds .page-intro {
+  max-width: 100%;
 }
 
 .loading-message,
@@ -382,6 +386,12 @@ body.shell-visible [data-shell-text] {
   position: relative;
   z-index: 2;
   border-radius: 0;
+  opacity: 0;
+  transition: opacity 80ms ease;
+}
+
+.video-wrapper.is-ready iframe {
+  opacity: 1;
 }
 
 .welcome-section-content {

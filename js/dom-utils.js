@@ -34,10 +34,11 @@ export function initializeIframeReveals(root) {
 export function prepareIframeReveal(iframe) {
   bindIframeReveal(iframe);
   ensureIframePoster(iframe);
+  clearIframeRevealTimeout(iframe);
   iframe.classList.remove('is-loaded');
   iframe.classList.add('is-loading');
   iframe.closest('.video-wrapper')?.classList.add('is-loading');
-  iframe.closest('.video-wrapper')?.classList.remove('is-loaded');
+  iframe.closest('.video-wrapper')?.classList.remove('is-loaded', 'is-ready');
 }
 
 function bindIframeReveal(iframe) {
@@ -56,10 +57,16 @@ function bindIframeReveal(iframe) {
   iframe.addEventListener(
     'load',
     () => {
+      clearIframeRevealTimeout(iframe);
       iframe.classList.remove('is-loading');
       iframe.classList.add('is-loaded');
       wrapper?.classList.remove('is-loading');
-      wrapper?.classList.add('is-loaded');
+      iframe.dataset.posterRevealTimeout = String(
+        window.setTimeout(() => {
+          wrapper?.classList.add('is-ready', 'is-loaded');
+          delete iframe.dataset.posterRevealTimeout;
+        }, 220),
+      );
     },
     { once: true },
   );
@@ -121,4 +128,14 @@ function getYoutubeVideoId(url) {
   }
 
   return '';
+}
+
+function clearIframeRevealTimeout(iframe) {
+  const timeoutId = Number(iframe.dataset.posterRevealTimeout || '0');
+  if (!timeoutId) {
+    return;
+  }
+
+  window.clearTimeout(timeoutId);
+  delete iframe.dataset.posterRevealTimeout;
 }

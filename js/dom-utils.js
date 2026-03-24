@@ -16,126 +16,14 @@ export function escapeHtml(value) {
     .replaceAll("'", '&#39;');
 }
 
+export function formatTextBlock(value) {
+  return escapeHtml(value).replaceAll(/\r?\n/g, '<br>');
+}
+
 export function indentHtml(html, spaces) {
   const indent = ' '.repeat(spaces);
   return html
     .split('\n')
     .map((line) => `${indent}${line}`)
     .join('\n');
-}
-
-export function initializeIframeReveals(root) {
-  root.querySelectorAll('iframe').forEach((iframe) => {
-    bindIframeReveal(iframe);
-    ensureIframePoster(iframe);
-  });
-}
-
-export function prepareIframeReveal(iframe) {
-  bindIframeReveal(iframe);
-  ensureIframePoster(iframe);
-  clearIframeRevealTimeout(iframe);
-  iframe.classList.remove('is-loaded');
-  iframe.classList.add('is-loading');
-  iframe.closest('.video-wrapper')?.classList.add('is-loading');
-  iframe.closest('.video-wrapper')?.classList.remove('is-loaded', 'is-ready');
-}
-
-function bindIframeReveal(iframe) {
-  if (iframe.dataset.iframeRevealBound === 'true') {
-    return;
-  }
-
-  iframe.dataset.iframeRevealBound = 'true';
-  const wrapper = iframe.closest('.video-wrapper');
-
-  if (iframe.hasAttribute('src')) {
-    iframe.classList.add('is-loading');
-    wrapper?.classList.add('is-loading');
-  }
-
-  iframe.addEventListener(
-    'load',
-    () => {
-      clearIframeRevealTimeout(iframe);
-      iframe.classList.remove('is-loading');
-      iframe.classList.add('is-loaded');
-      wrapper?.classList.remove('is-loading');
-      iframe.dataset.posterRevealTimeout = String(
-        window.setTimeout(() => {
-          wrapper?.classList.add('is-ready', 'is-loaded');
-          delete iframe.dataset.posterRevealTimeout;
-        }, 220),
-      );
-    },
-    { once: true },
-  );
-}
-
-function ensureIframePoster(iframe) {
-  const wrapper = iframe.closest('.video-wrapper');
-  if (!wrapper || wrapper.querySelector('.video-poster')) {
-    return;
-  }
-
-  const posterUrl = getYoutubePosterUrl(iframe.dataset.src || iframe.getAttribute('src') || '');
-  if (!posterUrl) {
-    return;
-  }
-
-  const poster = document.createElement('div');
-  poster.className = 'video-poster';
-  poster.setAttribute('aria-hidden', 'true');
-  poster.innerHTML = [
-    `<img src="${posterUrl}" alt="" loading="lazy">`,
-    '<span class="video-poster-overlay"></span>',
-    '<span class="video-poster-loader" aria-hidden="true"></span>',
-  ].join('');
-
-  wrapper.prepend(poster);
-}
-
-function getYoutubePosterUrl(url) {
-  const videoId = getYoutubeVideoId(url);
-  if (!videoId) {
-    return '';
-  }
-
-  return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-}
-
-function getYoutubeVideoId(url) {
-  if (!url) {
-    return '';
-  }
-
-  try {
-    const parsed = new URL(url, window.location.origin);
-
-    if (parsed.hostname.includes('youtu.be')) {
-      return parsed.pathname.replace(/^\/+/, '').split('/')[0];
-    }
-
-    if (parsed.hostname.includes('youtube.com')) {
-      if (parsed.pathname.startsWith('/embed/')) {
-        return parsed.pathname.replace('/embed/', '').split('/')[0];
-      }
-
-      return parsed.searchParams.get('v') || '';
-    }
-  } catch {
-    return '';
-  }
-
-  return '';
-}
-
-function clearIframeRevealTimeout(iframe) {
-  const timeoutId = Number(iframe.dataset.posterRevealTimeout || '0');
-  if (!timeoutId) {
-    return;
-  }
-
-  window.clearTimeout(timeoutId);
-  delete iframe.dataset.posterRevealTimeout;
 }

@@ -14,6 +14,26 @@
   --accent: #e6b450;
   --accent-hover: #ffd480;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --motion-ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-shell-panel-duration: 220ms;
+  --motion-shell-panel-stagger: 18ms;
+  --motion-shell-text-duration: 240ms;
+  --motion-shell-text-stagger: 14ms;
+  --motion-shell-text-offset: 22ms;
+  --motion-section-panel-duration: 200ms;
+  --motion-section-panel-stagger: 16ms;
+  --motion-section-text-duration: 220ms;
+  --motion-section-text-stagger: 14ms;
+  --motion-section-text-offset: 18ms;
+  --motion-accordion-content-duration: 180ms;
+  --motion-accordion-content-offset: 14ms;
+  --motion-accordion-content-stagger: 12ms;
+  --motion-accordion-open-duration: 220ms;
+  --motion-accordion-close-duration: 180ms;
+  --motion-iframe-poster-fade-duration: 140ms;
+  --motion-iframe-loader-transition-duration: 120ms;
+  --motion-iframe-loader-spin-duration: 700ms;
+  --motion-iframe-handoff-delay: 220ms;
 }
 
 *,

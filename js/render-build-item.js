@@ -1,35 +1,6 @@
-import { escapeHtml, indentHtml } from './dom-utils.js';
+import { escapeHtml, formatTextBlock, indentHtml } from './dom-utils.js';
 
-export function renderSection(section) {
-  const buildCountLabel = `${section.items.length} ${section.items.length === 1 ? 'build' : 'builds'}`;
-
-  return [
-    `<section class="build-section" id="${escapeHtml(section.id)}">`,
-    '  <div class="build-section-header">',
-    '    <div class="build-section-heading-group">',
-    `      <h2 class="build-section-title">${escapeHtml(section.title)}</h2>`,
-    `      <p class="build-section-meta">${escapeHtml(buildCountLabel)}</p>`,
-    '    </div>',
-    '  </div>',
-    '  <div class="build-section-items">',
-    section.items.map((item, index) => renderSectionItem(section.id, item, index)).join('\n'),
-    '  </div>',
-    '</section>',
-  ].join('\n');
-}
-
-export function renderSectionNav(sections) {
-  return [
-    '<div class="section-nav-list">',
-    ...sections.map(
-      (section) =>
-        `  <button type="button" class="section-nav-button" data-section-id="${escapeHtml(section.id)}" data-shell-text aria-pressed="false">${escapeHtml(section.title)}</button>`,
-    ),
-    '</div>',
-  ].join('\n');
-}
-
-function renderSectionItem(sectionId, item, index) {
+export function renderSectionItem(sectionId, item, index) {
   const panelId = `${sectionId}-item-panel-${index + 1}`;
   const label = escapeHtml(item.title);
 
@@ -51,7 +22,7 @@ function renderSectionItemBody(item) {
 
   if (item.videoUrl) {
     parts.push(
-      `        <div class="video-wrapper">`,
+      '        <div class="video-wrapper">',
       `          <iframe data-src="${escapeHtml(item.videoUrl)}" title="${escapeHtml(item.title)} video" loading="lazy" allowfullscreen></iframe>`,
       '        </div>',
     );
@@ -70,13 +41,13 @@ function renderSectionItemBody(item) {
 
   if (item.rotation) {
     parts.push(
-      `        <div class="build-description build-field"><strong>ROTATION:</strong> ${item.rotation}</div>`,
+      `        <div class="build-description build-field"><strong>ROTATION:</strong> ${formatTextBlock(item.rotation)}</div>`,
     );
   }
 
   if (item.explanation) {
     parts.push(
-      `        <div class="build-description build-field"><strong>EXPLANATION:</strong> ${item.explanation}</div>`,
+      `        <div class="build-description build-field"><strong>EXPLANATION:</strong> ${formatTextBlock(item.explanation)}</div>`,
     );
   }
 

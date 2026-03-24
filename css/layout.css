@@ -80,8 +80,8 @@
 body.shell-visible [data-shell-reveal] {
   opacity: 0;
   filter: blur(10px);
-  animation: sectionPanelReveal 220ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: calc(var(--shell-reveal-index, 0) * 18ms);
+  animation: sectionPanelReveal var(--motion-shell-panel-duration) var(--motion-ease-emphasized) forwards;
+  animation-delay: calc(var(--shell-reveal-index, 0) * var(--motion-shell-panel-stagger));
 }
 
 .page-hero--builds {
@@ -109,8 +109,10 @@ body.shell-visible [data-shell-reveal] {
 body.shell-visible [data-shell-text] {
   opacity: 0;
   filter: blur(8px);
-  animation: textGenerate 240ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: calc(var(--shell-text-index, 0) * 14ms + 22ms);
+  animation: textGenerate var(--motion-shell-text-duration) var(--motion-ease-emphasized) forwards;
+  animation-delay: calc(
+    var(--shell-text-index, 0) * var(--motion-shell-text-stagger) + var(--motion-shell-text-offset)
+  );
 }
 
 .section-list {
@@ -261,8 +263,8 @@ body.shell-visible [data-shell-text] {
 .build-section.is-visible .accordion-item.nested {
   opacity: 0;
   filter: blur(10px);
-  animation: sectionPanelReveal 200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: calc(var(--reveal-index, 0) * 16ms);
+  animation: sectionPanelReveal var(--motion-section-panel-duration) var(--motion-ease-emphasized) forwards;
+  animation-delay: calc(var(--reveal-index, 0) * var(--motion-section-panel-stagger));
 }
 
 .build-section-items {
@@ -297,8 +299,10 @@ body.shell-visible [data-shell-text] {
 .build-section.is-visible .build-field {
   opacity: 0;
   filter: blur(8px);
-  animation: textGenerate 220ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: calc(var(--text-reveal-index, 0) * 14ms + 18ms);
+  animation: textGenerate var(--motion-section-text-duration) var(--motion-ease-emphasized) forwards;
+  animation-delay: calc(
+    var(--text-reveal-index, 0) * var(--motion-section-text-stagger) + var(--motion-section-text-offset)
+  );
 }
 
 .build-section-meta {
@@ -334,7 +338,7 @@ body.shell-visible [data-shell-text] {
   position: absolute;
   inset: 0;
   z-index: 1;
-  transition: opacity 140ms ease;
+  transition: opacity var(--motion-iframe-poster-fade-duration) ease;
   pointer-events: none;
 }
 
@@ -368,13 +372,15 @@ body.shell-visible [data-shell-text] {
   box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.18);
   opacity: 0;
   transform: scale(0.92);
-  transition: opacity 120ms ease, transform 120ms ease;
+  transition:
+    opacity var(--motion-iframe-loader-transition-duration) ease,
+    transform var(--motion-iframe-loader-transition-duration) ease;
 }
 
 .video-wrapper.is-loading .video-poster-loader {
   opacity: 1;
   transform: scale(1);
-  animation: videoPosterSpin 700ms linear infinite;
+  animation: videoPosterSpin var(--motion-iframe-loader-spin-duration) linear infinite;
 }
 
 .video-wrapper.is-loaded .video-poster-loader {

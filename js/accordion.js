@@ -1,8 +1,9 @@
-import { prepareIframeReveal } from './dom-utils.js';
+import { getMotionDurationMs, getMotionString } from './motion-tokens.js';
+import { prepareIframeReveal } from './video-embeds.js';
 
-const HEIGHT_EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
-const OPEN_DURATION_MS = 220;
-const CLOSE_DURATION_MS = 180;
+const HEIGHT_EASE = getMotionString('--motion-ease-emphasized', 'cubic-bezier(0.22, 1, 0.36, 1)');
+const OPEN_DURATION_MS = getMotionDurationMs('--motion-accordion-open-duration', 220);
+const CLOSE_DURATION_MS = getMotionDurationMs('--motion-accordion-close-duration', 180);
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function initializeAccordions(root) {

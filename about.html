@@ -8,6 +8,8 @@
   <meta name="google-adsense-account" content="ca-pub-2375120912485535">
   <title>About Me</title>
   <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
   <link rel="preconnect" href="https://www.youtube.com">
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/layout.css" />
@@ -19,7 +21,15 @@
 <body class="motion-pending">
   <header class="site-header">
     <div class="header-content">
-      <p class="site-title">Nick The Infamous</p>
+      <a class="site-brand" href="index.html" aria-label="Nick The Infamous home">
+        <img
+          class="site-brand-mark"
+          src="images/favicon.png"
+          alt=""
+          width="192"
+          height="192" />
+        <span class="site-title">Nick The Infamous</span>
+      </a>
       <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -31,30 +41,30 @@
   </header>
 
   <main class="page-content">
-    <section class="page-hero page-hero--standard" data-shell-reveal>
+    <section class="page-hero page-hero--wide" data-shell-reveal>
       <h1 class="page-title" data-shell-text>About Me</h1>
       <p class="page-intro" data-shell-text>
-        A little about my Guild Wars 2 background, the channel, and the build philosophy behind what I share here.
+        My Guild Wars 2 background, the channel, and the build philosophy behind what I share.
       </p>
     </section>
 
-    <div class="page-panel about-content" data-shell-reveal>
+    <section class="page-panel panel-copy" data-shell-reveal>
       <p data-shell-text>Hello! I'm Nick, just a Guild Wars 2 player and a warrior main.</p>
       
-      <h3 data-shell-text>My YouTube Channel</h3>
+      <h3 class="panel-section-heading" data-shell-text>My YouTube Channel</h3>
       <p data-shell-text>Check out my <a href="https://www.youtube.com/@NickTheInfamous" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I share gameplay, build guides, etc. for Guild Wars 2 players of all experience levels.</p>
       <p data-shell-text>I also maintain a <a href="https://www.youtube.com/playlist?list=PLfvsp7LCVdzWv6i_5ftGj1mZMfc2LF05_" target="_blank" rel="noopener noreferrer">playlist of low intensity builds</a> that are perfect for players who want to be effective while keeping things simple and easy to play. I recommend using the low intensity build tab here though, but your preference if you like the playlist.</p>
       <p data-shell-text>I regularly post POV (Point of View) videos showcasing my builds across different game modes. These videos demonstrate that you can perform well in most public groups playing these builds. That won't always be true, some groups are much better than others. Check out my <a href="https://www.youtube.com/playlist?list=PLfvsp7LCVdzWTo96E_BMrQc5vY3JY2uI9" target="_blank" rel="noopener noreferrer">POVs playlist</a> to see them in action.</p>
       
-      <h3 data-shell-text>My Background</h3>
+      <h3 class="panel-section-heading" data-shell-text>My Background</h3>
       <p data-shell-text>I'm a veteran Guild Wars 2 player who has been playing on and off since the game's original release. I haven't been playing in the last few years but I came back recently and it's been a lot of fun. </p>
       <p data-shell-text>I also don't claim to be a pro player. The stuff I create may be further optimized so I don't claim that I have the absolute best stuff or best knowledge of the game.</p>
       
-      <h3 data-shell-text>My Build Philosophy</h3>
+      <h3 class="panel-section-heading" data-shell-text>My Build Philosophy</h3>
       <p data-shell-text>My approach to builds focuses on accessibility and effectiveness, particularly for newer or more casual players.</p>
       <p data-shell-text>I focus on Viper's, Berserker's, and Assassin's gear because these sets are more flexible across different builds and classes. This makes them more cost-efficient as your first ascended sets, as they can be used effectively on multiple characters and builds. I avoid more specialized stat combinations even in cases where they may offer more damage (see grieving 1 button paragon, etc.) since they offer less flexibility and may not be as versatile for players building their initial sets.</p>
       <p data-shell-text>I design builds to hit critical hit chance caps without relying on food buffs or infusions. This makes the builds more sustainable for regular play and raid training without requiring players to spend gold on expensive consumables just to make the build function.</p>
-    </div>
+    </section>
   </main>
 
   <script type="module" src="js/main.js"></script>

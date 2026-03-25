@@ -1,88 +1,94 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
+## Project Overview
 
-This repository is a small GitHub Pages static site.
+This repository is a small static GitHub Pages site for `nick-the-infamous.github.io`.
 
-- `index.html`: homepage / landing page
-- `builds.html`: low-intensity builds browser page
+The site uses a shared page shell across the top-level pages:
+
+- fixed header with `site-brand` and `main-nav`
+- `main.page-content` as the outer page wrapper
+- `section.page-hero.page-hero--wide` for the page intro
+- `section.page-panel` for main content blocks
+
+There is no build pipeline. HTML, CSS, JSON, and modular JavaScript are served directly.
+
+## Project Structure
+
+- `index.html`: homepage with overview cards and platform links
+- `builds.html`: low intensity builds browser page
 - `about.html`: static about page
-- `sections/welcome.html`: unique welcome section loaded as raw HTML
-- `professions/`: JSON data for profession build entries
+- `sections/welcome.html`: hand-authored welcome section loaded into the builds browser
+- `professions/*.json`: structured profession build data
+- `images/favicon.png`: shared site icon and header brand mark
 - `js/main.js`: page bootstrap
-- `js/section-browser.js`: section routing and content loading
+- `js/section-browser.js`: section routing, fetching, and render orchestration
 - `js/render-*.js`: focused renderers for nav, sections, and build items
 - `js/nav-interactions.js`: drag-scroll and current-page link guards
-- `js/motion.js` / `js/motion-tokens.js`: shared motion hooks and timing tokens
+- `js/motion.js` and `js/motion-tokens.js`: shared motion hooks and timing tokens
 - `js/video-embeds.js`: iframe poster/loading behavior
 - `js/accordion.js`: accordion behavior and iframe lazy loading
 - `js/dom-utils.js`: small shared DOM/string helpers
-- `css/`: split styles for base tokens, layout, accordion UI, and responsive overrides
+- `css/base.css`: core tokens and global element styles
+- `css/layout.css`: shared page shell and component layout rules
+- `css/accordion.css`: accordion-specific styling
+- `css/responsive.css`: responsive adjustments
+- `scripts/validate-content.mjs`: profession content validation
 
-Keep profession content in `professions/*.json`. Keep one-off markup in `sections/` only when the content does not fit the shared JSON renderer.
+Keep profession content in `professions/*.json`. Only use `sections/` for content that does not fit the shared JSON renderer.
 
-## Visual Style & New Pages
+## Shared UI Patterns
 
-When creating or updating pages, follow the existing site style instead of introducing a new visual direction.
+When creating or editing pages, preserve the existing site system.
 
-- Reuse the shared page shell: fixed header, `.page-content` main wrapper, `.page-hero` intro section, and `.page-panel` content panels.
-- Keep the current dark theme, gold accent, soft borders, and subtle panel gradients already defined in `css/base.css` and `css/layout.css`.
-- Prefer simple page heroes with a small kicker line and a short intro paragraph. Do not introduce oversized marketing-style hero sections unless explicitly requested.
-- Use the existing navigation pattern and labels: `Home`, `Low Intensity Builds`, and `About Me`.
-- Keep panels and cards consistent with the current site: rounded corners, thin borders, low-contrast backgrounds, and restrained hover motion.
-- New content sections should usually be built from existing patterns such as `.page-panel`, `.home-info-card`, `.social-link-card`, `.welcome-block`, and the accordion components before adding new one-off styles.
-- Keep copy practical and compact. The site tone is straightforward and informational, not promotional.
-- Prefer the same content width as the existing pages. Avoid creating narrow one-off layouts unless the page specifically needs it.
-- For external profile/platform links, use the existing card/link treatment rather than plain link dumps when the page already uses cards.
-- If a new page needs custom styles, add only the minimum necessary rules and keep them aligned with the existing spacing, border, and typography scale.
+- Reuse the shared header pattern: `site-header`, `header-content`, `site-brand`, `site-brand-mark`, `site-title`, and `main-nav`.
+- Reuse the shared page shell: `page-content`, `page-hero page-hero--wide`, `page-title`, `page-intro`, and `page-panel`.
+- Use `panel-copy`, `page-panel--centered`, and `page-panel-title` when they match the content instead of inventing near-duplicates.
+- Reuse existing cards and blocks before adding new patterns: `home-info-card`, `social-link-card`, `welcome-block`, `welcome-card`, `browser-*`, and accordion components.
+- Keep the dark theme, gold accent, soft borders, panel gradients, and restrained motion already established in `css/base.css` and `css/layout.css`.
+- Prefer small, readable hero copy and scannable content blocks. Avoid oversized marketing-style hero sections unless explicitly requested.
+- Use the existing navigation labels: `Home`, `Low Intensity Builds`, and `About Me`.
 
-## Frontend Architecture Principles
+## Architecture Rules
 
-This site should follow a small component-based frontend structure with clear separation of structure, presentation, and behavior.
+- Structure in HTML: use semantic elements and keep markup focused on content hierarchy.
+- Presentation in CSS: reuse shared classes and tokens before adding new selectors.
+- Behavior in JavaScript: keep interactions in focused modules instead of inline handlers.
+- Prefer composition over one-off styling: extend existing shells, panels, cards, and accordions before creating page-specific variants.
+- Keep naming role-based: class and module names should describe responsibility, not appearance alone.
+- Keep UI state explicit with classes and attributes such as `active`, `open`, `hidden`, `loading`, and `busy`.
+- Preserve accessibility by default: semantic headings, keyboard-usable controls, visible focus states, and appropriate ARIA usage.
 
-- Structure in HTML: page markup should describe content and hierarchy clearly using semantic elements such as `header`, `main`, `section`, headings, paragraphs, lists, buttons, and nav.
-- Presentation in CSS: visual decisions should live in `css/` and reuse shared classes and tokens before adding page-specific styles.
-- Behavior in JavaScript: interaction logic should stay in focused JS modules instead of being embedded into HTML.
-- Reuse existing patterns first: prefer shared shells, panels, cards, accordions, and nav patterns before creating new UI structures.
-- Keep content and rendering separate: structured content belongs in `professions/*.json` when possible, while rendering logic belongs in the `render-*.js` modules.
-- Prefer composition over one-off styling: build new pages from existing layout and component classes rather than inventing isolated page-specific markup and CSS.
-- Keep naming descriptive and role-based: classes and modules should describe responsibility, not appearance alone.
-- Keep state explicit: use clear classes and attributes for UI state such as active, open, loading, hidden, and busy.
-- Design for scanning: keep headings, intros, cards, and sections easy to scan quickly.
-- Responsive behavior should simplify, not reinvent: layouts should collapse cleanly on smaller screens instead of becoming a different design.
-- Accessibility is a default requirement: preserve semantic HTML, keyboard-usable controls, visible focus states, and appropriate ARIA attributes where needed.
-- Keep the system small: add new abstractions only when they will actually be reused or reduce confusion.
+## Content and Style Conventions
 
-## Build, Test, and Development Commands
+- Use 2-space indentation in HTML, CSS, JSON, and JavaScript.
+- Keep copy practical, compact, and informational rather than promotional.
+- JSON files should use lowercase profession names, for example `professions/warrior.json`.
+- JS modules should use kebab-case or simple lowercase names, for example `render-build-section.js`.
+- CSS files should be role-based, for example `accordion.css` and `responsive.css`.
+- Profession JSON should keep explicit fields such as `title`, `videoUrl`, `build`, `rotation`, and `explanation`.
 
-- `npx serve .`: run a local web server for previewing the site
-- `node --check js/main.js`: syntax-check the main JS entrypoint
-- `node --check js/render-build-section.js`: syntax-check section renderer changes
+## Development Commands
+
+- `npx serve .`: run a local preview server
+- `node --check js/main.js`: syntax-check a JS entrypoint
+- `node --check js/render-build-section.js`: syntax-check a renderer module
 - `node scripts/validate-content.mjs`: validate profession JSON structure and URLs
 
-Because the builds browser loads section fragments with `fetch`, do not open `builds.html` directly from disk for testing.
+Because the builds browser loads section fragments with `fetch`, do not test `builds.html` by opening it directly from disk.
 
-## Coding Style & Naming Conventions
+## Testing Expectations
 
-Use 2-space indentation in HTML, CSS, JSON, and JavaScript. Prefer small, single-purpose ES modules in `js/` and group styles by responsibility in `css/`.
+There is no formal test framework yet. For changes:
 
-Naming conventions:
+- run `node --check` on any edited JavaScript modules
+- preview the site locally through a web server
+- verify section loading, accordion behavior, profession links, and any affected responsive layout
 
-- JSON files: lowercase profession names, e.g. `professions/warrior.json`
-- JS modules: kebab-case or simple lowercase names, e.g. `render-build-section.js`
-- CSS files: role-based names, e.g. `accordion.css`, `responsive.css`
+If a UI change affects layout or interaction, leave a short note describing what you checked. A screenshot is useful when practical.
 
-Keep profession JSON structured with explicit fields like `title`, `videoUrl`, `build`, `rotation`, and `explanation`.
+## Security and Repo Hygiene
 
-## Testing Guidelines
-
-There is no formal test framework in this repository yet. For changes, do two things:
-
-- run `node --check` on edited JS modules
-- preview the site locally and verify accordion behavior, section loading, and profession links
-
-If a UI change affects layout or interaction, include a screenshot or short note describing what you checked.
-
-## Security & Configuration Tips
-
-Do not commit secrets. Keep external links hardened with `target="_blank"` plus `rel="noopener noreferrer"`. `.idea/` is ignored and should stay untracked.
+- Do not commit secrets.
+- Keep external links hardened with `target="_blank"` plus `rel="noopener noreferrer"`.
+- `.idea/` should remain untracked.

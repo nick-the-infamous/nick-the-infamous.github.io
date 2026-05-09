@@ -8,8 +8,6 @@ const allowedItemKeys = new Set([
   'title',
   'videoUrl',
   'build',
-  'rotation',
-  'explanation',
   'cleaned_transcript',
   'contentHtml',
 ]);
@@ -90,25 +88,25 @@ function validateItem(item, relativePath, index, seenTitles) {
   } else {
     requireNonEmptyString(item.videoUrl, relativePath, `${label}.videoUrl`);
 
-    if ('build' in item) {
-      requireString(item.build, relativePath, `${label}.build`);
-    }
-
-    if ('rotation' in item) {
-      requireString(item.rotation, relativePath, `${label}.rotation`);
-    }
-
-    if ('explanation' in item) {
-      requireString(item.explanation, relativePath, `${label}.explanation`);
-    }
+    requireNonEmptyString(item.build, relativePath, `${label}.build`);
   }
 
   if (item.videoUrl && !isValidUrl(item.videoUrl)) {
     reportError(relativePath, `${label}.videoUrl must be a valid URL.`);
   }
 
-  if (item.build && !isValidUrl(item.build)) {
-    reportError(relativePath, `${label}.build must be a valid URL.`);
+  if (item.build) {
+    const urls = extractUrls(item.build);
+
+    if (urls.length === 0) {
+      reportError(relativePath, `${label}.build must include at least one URL.`);
+    }
+
+    urls.forEach((url) => {
+      if (!isValidUrl(url)) {
+        reportError(relativePath, `${label}.build contains invalid URL "${url}".`);
+      }
+    });
   }
 
   if ('cleaned_transcript' in item) {
@@ -135,6 +133,14 @@ function isValidUrl(value) {
   } catch {
     return false;
   }
+}
+
+function extractUrls(value) {
+  return String(value).match(/https?:\/\/[^\s<>"']+/g)?.map(stripTrailingPunctuation) || [];
+}
+
+function stripTrailingPunctuation(value) {
+  return value.replace(/[),.;!?]+$/, '');
 }
 
 function isPlainObject(value) {

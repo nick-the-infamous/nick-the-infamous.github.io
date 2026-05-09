@@ -1,4 +1,4 @@
-import { escapeHtml, formatTextBlock, indentHtml } from './dom-utils.js';
+import { escapeHtml, formatLinkedTextBlock, indentHtml } from './dom-utils.js';
 
 export function renderSectionItem(sectionId, item, index) {
   const panelId = `${sectionId}-item-panel-${index + 1}`;
@@ -36,19 +36,7 @@ function renderSectionItemBody(item, transcriptPanelId) {
 
   if (item.build) {
     parts.push(
-      `        <p class="build-description build-field"><strong>BUILD:</strong> <a href="${escapeHtml(item.build)}" target="_blank" rel="noopener noreferrer">link</a></p>`,
-    );
-  }
-
-  if (item.rotation) {
-    parts.push(
-      `        <div class="build-description build-field"><strong>ROTATION:</strong> ${formatTextBlock(item.rotation)}</div>`,
-    );
-  }
-
-  if (item.explanation) {
-    parts.push(
-      `        <div class="build-description build-field"><strong>EXPLANATION:</strong> ${formatTextBlock(item.explanation)}</div>`,
+      `        <div class="build-description build-field"><strong>BUILD:</strong><br>${formatLinkedTextBlock(item.build)}</div>`,
     );
   }
 
